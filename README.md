@@ -74,7 +74,7 @@ ContentStrategyAgent (决策转译 Agent)
 - 可下载的完整输出目录（Artifacts）
 
 本仓库已内置：
-- GitHub Actions workflow：`.github/workflows/social_insight_workflow.yml`
+- GitHub Actions workflow：`.github/workflows/tech_insight_workflow.yml`
 - 一键 OIDC + 变量配置脚本：`scripts/setup_github_actions_oidc.sh` / `scripts/setup_github_actions_oidc.ps1`
 - 本地依赖安装脚本：`scripts/install_deps.sh` / `scripts/install_deps.ps1`
 
@@ -305,7 +305,7 @@ python run.py --non-interactive --mock-agents
 
 ## 附录：实现与文件索引
 
-- 工作流 YAML：`workflows/social_insight_workflow.yaml`
+- 工作流 YAML：`workflows/tech_insight_workflow.yaml`
 - 生成的可执行 runner：`generated/tech_insight_workflow/run.py`
 - Agents spec / id map：
   - `generated/tech_insight_workflow/agents.yaml`

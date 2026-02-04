@@ -1,4 +1,4 @@
-name: social-insight-workflow
+name: tech-insight-workflow
 
 on:
   push:
@@ -13,13 +13,10 @@ permissions:
 
 jobs:
   run-azure-ai:
-    # Default: run on push to main and on manual dispatch.
     if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
-      # Prefer GitHub Repository Variables (vars) to allow 0 secrets in a lab.
-      # Fallback to secrets for teams who prefer secrets.
       AZURE_CLIENT_ID: ${{ vars.AZURE_CLIENT_ID || secrets.AZURE_CLIENT_ID }}
       AZURE_TENANT_ID: ${{ vars.AZURE_TENANT_ID || secrets.AZURE_TENANT_ID }}
       AZURE_SUBSCRIPTION_ID: ${{ vars.AZURE_SUBSCRIPTION_ID || secrets.AZURE_SUBSCRIPTION_ID }}
@@ -82,16 +79,16 @@ jobs:
 
       - name: Create/reuse Foundry agents and write id map
         run: |
-          python generated/social_insight_workflow/create_agents_from_workflow.py \
-            --workflow workflows/social_insight_workflow.yaml \
-            --spec generated/social_insight_workflow/agents.yaml \
-            --write-id-map generated/social_insight_workflow/agent_id_map.json
+          python generated/tech_insight_workflow/create_agents_from_workflow.py \
+            --workflow workflows/tech_insight_workflow.yaml \
+            --spec generated/tech_insight_workflow/agents.yaml \
+            --write-id-map generated/tech_insight_workflow/agent_id_map.json
 
       - name: Run workflow (Azure AI)
         env:
           RUN_OUT: output/ci-azure-${{ github.run_id }}-${{ github.run_attempt }}
         run: |
-          cd generated/social_insight_workflow
+          cd generated/tech_insight_workflow
           python run.py --non-interactive --azure-ai --azure-ai-verbose --set Local.RunOutputDir=${RUN_OUT}
           echo "Wrote outputs to ${RUN_OUT}"
 
@@ -164,7 +161,7 @@ jobs:
       - name: Upload outputs (Azure)
         uses: actions/upload-artifact@v4
         with:
-          name: social-insight-output-azure
+          name: tech-insight-output-azure
           path: |
             output/ci-azure-${{ github.run_id }}-${{ github.run_attempt }}/
             output/ci-azure-${{ github.run_id }}-${{ github.run_attempt }}/report.md
