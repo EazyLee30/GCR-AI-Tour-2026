@@ -1,5 +1,5 @@
 Param(
-  [string]$AppName = "gcr-ai-tour-gha-oidc",
+  [string]$AppName = "gcr-ai-tour-2026-gha-oidc",
   [string]$Owner = "",
   [string]$Repo = "",
   [string]$Branch = "main",

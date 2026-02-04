@@ -91,12 +91,12 @@ ContentStrategyAgent (决策转译 Agent)
 在你自己的电脑上把 fork 后的仓库 clone 下来：
 
 ```bash
-git clone https://github.com/<your-github-user>/gcr-ai-tour.git
-cd gcr-ai-tour/lab01
+git clone https://github.com/<your-github-user>/GCR-AI-Tour-2026.git
+cd GCR-AI-Tour-2026/Lab-01-Tech-Insights
 ```
 
 说明：
-- 下面的脚本会优先从本地 `git remote` 自动推断 `owner/repo`，在 `lab01/` 目录运行即可。
+- 下面的脚本会优先从本地 `git remote` 自动推断 `owner/repo`，在 `Lab-01-Tech-Insights/` 目录运行即可。
 
 ### 0.6) 环境初始化（本地一次，推荐）
 
@@ -112,7 +112,7 @@ Linux（Debian/Ubuntu，推荐）：
 ```
 
 说明：
-- `install_deps.sh` 会在检测到 `apt-get` 时，尝试安装 Azure CLI（`az`）和 GitHub CLI（`gh`），然后创建 `lab01/.venv` 并安装 `lab01/requirements.txt`。
+- `install_deps.sh` 会在检测到 `apt-get` 时，尝试安装 Azure CLI（`az`）和 GitHub CLI（`gh`），然后创建 `Lab-01-Tech-Insights/.venv` 并安装 `Lab-01-Tech-Insights/requirements.txt`。
 - 如果你不是 Debian/Ubuntu（没有 `apt-get`），脚本会跳过 CLI 安装并提示安装链接；你仍可以继续用它安装 Python 依赖。
 
 Windows（PowerShell，推荐）：
@@ -121,8 +121,8 @@ Windows（PowerShell，推荐）：
 # 允许当前会话执行本地脚本（不改系统全局策略）
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
-# 进入 lab01 目录（本仓库可运行内容都在这里）
-# Set-Location gcr-ai-tour\lab01
+# 进入 Lab-01-Tech-Insights 目录（本仓库可运行内容都在这里）
+# Set-Location GCR-AI-Tour-2026\Lab-01-Tech-Insights
 
 ./scripts/install_deps.ps1
 
@@ -131,7 +131,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ```
 
 说明：
-- `install_deps.ps1` 会优先用 `winget` 安装 `az`/`gh`（可选），并创建 `lab01/.venv` 安装 Python 依赖。
+- `install_deps.ps1` 会优先用 `winget` 安装 `az`/`gh`（可选），并创建 `Lab-01-Tech-Insights/.venv` 安装 Python 依赖。
 
 ### 1)（必须）在 Azure AI Foundry Portal 创建 Project + 模型部署
 
@@ -215,8 +215,8 @@ gh auth login
 - 在错误的目录/错误的 remote 上运行：脚本会从 `git remote get-url origin` 推断目标仓库。
   - 建议先执行：`git remote get-url origin`，确认指向你 fork 的仓库（而不是上游仓库）。
   - 如果你不想依赖推断，可以显式指定：
-    - Bash：`--github-repo <your-github-user>/gcr-ai-tour`
-    - PowerShell：`-GitHubRepo <your-github-user>/gcr-ai-tour`
+    - Bash：`--github-repo <your-github-user>/GCR-AI-Tour-2026`
+    - PowerShell：`-GitHubRepo <your-github-user>/GCR-AI-Tour-2026`
 
 ### 3) push 到 main，GitHub Actions 自动跑真实 Azure AI
 

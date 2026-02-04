@@ -1,8 +1,9 @@
-# gcr-ai-tour
+# GCR-AI-Tour-2026
 
-本仓库的可运行内容已整体迁移到 `lab01/` 目录下。
+本仓库的可运行内容已整体迁移到 `Lab-01-Tech-Insights/` 目录下。
 
-- 入口文档：`lab01/README.md`
-- 本地运行：先 `cd lab01`，再按文档执行 `./scripts/install_deps.sh` 或直接运行 `generated/tech_insight_workflow/run.py`
+- 入口文档：`Lab-01-Tech-Insights/README.md`
+- 本地运行：先 `cd Lab-01-Tech-Insights`，再按文档执行 `./scripts/install_deps.sh` 或直接运行 `generated/tech_insight_workflow/run.py`
 
 > 说明：`.github/workflows` 仍保留在仓库根目录（GitHub Actions 规范要求）。
+

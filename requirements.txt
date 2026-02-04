@@ -1,3 +1,4 @@
 # Wrapper to keep root-level tooling working.
-# The actual dependencies live in lab01/requirements.txt
--r lab01/requirements.txt
+# The actual dependencies live in Lab-01-Tech-Insights/requirements.txt
+-r Lab-01-Tech-Insights/requirements.txt
+

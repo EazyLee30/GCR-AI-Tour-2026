@@ -61,7 +61,7 @@ jobs:
           if [[ -z "$name" ]]; then
             suffix=$(date +%y%m%d%H%M%S)
             rand=$(head -c 4 /dev/urandom | od -An -tx1 | tr -d ' \n')
-            name="swa-gcr-ai-tour-${suffix}-${rand}"
+            name="swa-gcr-ai-tour-2026-${suffix}-${rand}"
           fi
           echo "Resolved SWA name: $name"
           echo "name=$name" >> "$GITHUB_OUTPUT"
@@ -140,6 +140,6 @@ jobs:
           azure_static_web_apps_api_token: ${{ steps.get_token.outputs.token }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "lab01/frontend"
+          app_location: "Lab-01-Tech-Insights/frontend"
           output_location: ""
           api_location: ""

@@ -84,7 +84,7 @@ Tip:
 EOF
 }
 
-APP_NAME="gcr-ai-tour-gha-oidc"
+APP_NAME="gcr-ai-tour-2026-gha-oidc"
 OWNER=""
 REPO=""
 BRANCH="main"

@@ -242,7 +242,7 @@ def tech_fetch_all_to_disk(
     results: list[dict[str, Any]] = []
 
     headers = {
-        "User-Agent": "gcr-ai-tour/tech_insight_workflow (+https://github.com)"
+        "User-Agent": "GCR-AI-Tour-2026/tech_insight_workflow (+https://github.com)"
     }
 
     with httpx.Client(timeout=timeout_seconds, headers=headers, follow_redirects=True) as client:
