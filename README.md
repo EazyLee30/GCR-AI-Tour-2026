@@ -51,6 +51,22 @@ pip install -r requirements.txt --pre
 python podcast_workflow.py -t "你的播客话题"
 ```
 
+### 通过 GitHub Actions 触发
+
+如果你希望通过 GitHub Actions 自动运行播客生成工作流，请按以下步骤操作：
+
+1. **Fork 本仓库**到你自己的 GitHub 账号下
+2. **创建 Fine-grained Personal Access Token**：
+   - 前往 [GitHub Personal Access Tokens](https://github.com/settings/personal-access-tokens) 页面
+   - 点击 **Generate new token**，选择 **Fine-grained personal access tokens**
+   - 在权限设置中，添加 **Copilot** → **Copilot requests** 权限（Read and Write）
+   - 生成并复制 Token
+3. **添加 Repository Secret**：
+   - 进入你 Fork 后的仓库，打开 **Settings** → **Secrets and variables** → **Actions**
+   - 点击 **New repository secret**
+   - Name 填写 `COPILOT_GITHUB_TOKEN`，Value 粘贴上一步生成的 Token
+4. 在 **Actions** 页面手动触发 `Daily Podcast Generator` 工作流，或等待每日定时调度
+
 ## Lab-03-GitHub-Copilot（你将做什么）
 
 这是一个用于学习 GitHub Copilot 与 Copilot SDK 的 Lab，聚焦“把网页内容生成为 PowerPoint”。
