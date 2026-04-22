@@ -3,123 +3,297 @@
   "insights": [
     {
       "hotspot_id": "H01",
-      "title": "Apple CEO 交接：Tim Cook 退任，John Ternus 接任",
-      "what_changed": "Apple 宣布 Tim Cook 卸任 CEO，由硬件工程师出身的 John Ternus 接任，Johny Srouji 出任首席硬件官。这是苹果近十余年来最重大的领导层变动。",
-      "why_it_matters": "Tim Cook 时代苹果以供应链管理和 iPhone 生态为核心；Ternus 以硬件设计见长，可能将苹果战略重心更多转向设备端 AI（Apple Intelligence）、AR/VR 眼镜及芯片自研。对苹果开发者生态、企业采购和竞争对手都将产生深远影响。",
-      "who_is_impacted": ["苹果开发者与合作伙伴", "企业 IT 采购决策者", "苹果股东与投资人", "竞争对手（Google、Microsoft）"],
-      "next_actions": ["关注 WWDC 2026 是否有战略方向调整信号", "评估苹果 AI 策略对 iOS/macOS 开发者工具链的影响", "跟踪 Ternus 在供应链与对华关系上的政策走向"],
-      "risk_notes": ["新任 CEO 过渡期可能导致短期产品节奏不确定性", "与特朗普政府的关系处理将考验 Ternus 的政治智慧"],
-      "references": ["https://techcrunch.com/", "https://www.theverge.com/", "https://www.wired.com/", "https://arstechnica.com/"]
+      "title": "SpaceX 拟以 600 亿美元收购 AI 编程助手 Cursor",
+      "what_changed": "SpaceX 与 AI 编程工具 Cursor 达成潜在收购协议，估值 600 亿美元，打破 AI 工具赛道估值纪录。",
+      "why_it_matters": "将顶级 AI 编程助手纳入航天/科技巨头生态，可能改变 AI 开发工具的竞争格局，并推动更多战略性收购。",
+      "who_is_impacted": [
+        "使用 Cursor 的开发者",
+        "AI 编程工具竞争对手（GitHub Copilot、Codeium 等）",
+        "SpaceX 内部工程团队",
+        "AI 创业公司估值参考"
+      ],
+      "next_actions": [
+        "关注收购最终协议确认",
+        "评估 Cursor 产品未来定价和访问政策变化",
+        "关注竞品工具的市场反应"
+      ],
+      "risk_notes": [
+        "收购后 Cursor 可能限制非 SpaceX 用户访问",
+        "高估值可能引发泡沫担忧"
+      ],
+      "references": [
+        "https://techcrunch.com/",
+        "https://news.ycombinator.com/",
+        "https://www.theverge.com/"
+      ]
     },
     {
       "hotspot_id": "H02",
-      "title": "Cloudflare Agents Week 2026：构建代理云与 AI 工程栈",
-      "what_changed": "Cloudflare 推出 Project Think（AI 代理持久化运行时）、AI 代码审查编排平台，并公开其内部 AI 工程栈。本次 Agents Week 是 Cloudflare 在 AI 代理基础设施领域的战略级集中发布。",
-      "why_it_matters": "AI 代理需要持久化状态、跨步骤执行和可靠的运行时支撑，这正是 Cloudflare 填补的空白。Project Think 让开发者无需自建持久层即可运行长时运行的 AI 代理，极大降低了 agentic 应用的工程复杂度。",
-      "who_is_impacted": ["使用 Cloudflare Workers 的开发者", "构建 AI Agentic 应用的工程团队", "与 Cloudflare 竞争的云厂商（AWS Lambda、Vercel）"],
-      "next_actions": ["评估 Project Think 是否适合替代自建代理编排层", "关注 Cloudflare AI Gateway 的定价与限额", "试用 Cloudflare AI Code Review 编排 API"],
-      "risk_notes": ["Cloudflare 供应商锁定风险需评估", "Agent 持久化运行时的冷启动与计费模型尚待观察"],
-      "references": ["https://blog.cloudflare.com/", "https://www.infoq.com/"]
+      "title": "Apple CEO Tim Cook 宣布退休，John Ternus 接任",
+      "what_changed": "Tim Cook 宣布退休，执掌苹果 15 年，John Ternus 将接任 CEO。这是苹果自乔布斯去世后最重大的权力交接。",
+      "why_it_matters": "Ternus 以硬件工程背景为主，其 AI 战略偏好尚不明朗。苹果在 AI 时代能否追赶 OpenAI/Google 将是关键观察点。",
+      "who_is_impacted": [
+        "苹果员工和供应链",
+        "iPhone 用户（产品策略可能改变）",
+        "竞争对手 Google、Microsoft",
+        "苹果投资者"
+      ],
+      "next_actions": [
+        "跟踪 Ternus 的首次公开战略表态",
+        "关注苹果 AI 研发预算和收购动向",
+        "观察苹果与中国市场策略的延续性"
+      ],
+      "risk_notes": [
+        "领导层过渡期可能导致产品节奏延迟",
+        "投资者信心短期波动风险"
+      ],
+      "references": [
+        "https://techcrunch.com/",
+        "https://www.wired.com/"
+      ]
     },
     {
       "hotspot_id": "H03",
-      "title": "Anthropic 获亚马逊 50 亿美元投资并承诺百亿云消费",
-      "what_changed": "Anthropic 宣布新一轮 50 亿美元融资，来源为亚马逊；同时承诺将 1000 亿美元的计算支出投入 AWS。NSA 被曝光使用 Anthropic 的 Mythos 模型，引发安全社区关注。",
-      "why_it_matters": "此轮融资进一步巩固了 Anthropic 与 Amazon 的深度绑定，AWS Bedrock 将成为 Claude 系列模型的核心分发渠道。NSA 使用案例表明政府级 AI 应用已进入高敏感落地阶段，同时也引发了关于 AI 双用途风险的讨论。",
-      "who_is_impacted": ["AWS 用户（可通过 Bedrock 访问更新的 Claude 模型）", "企业 AI 采购团队", "AI 安全研究者与监管机构", "OpenAI、Google 等竞争对手"],
-      "next_actions": ["评估 AWS Bedrock 上 Claude Opus 4.7 是否满足当前项目需求", "关注 AI 模型用于政府/军事场景的监管动向", "更新 AI 供应商风险评估矩阵"],
-      "risk_notes": ["Anthropic 深度依赖 AWS 可能限制其与其他云厂商的合作灵活性", "Mythos 模型用于情报机构引发双用途 AI 伦理争议"],
-      "references": ["https://techcrunch.com/", "https://aws.amazon.com/blogs/aws/", "https://arstechnica.com/"]
+      "title": "ChatGPT Images 2.0 发布：联网图像生成新能力",
+      "what_changed": "OpenAI 发布 ChatGPT Images 2.0，文字渲染质量大幅提升，并可联网获取实时信息融入图像。",
+      "why_it_matters": "图文混合生成联网能力标志着多模态 AI 进入新阶段，营销、设计、媒体等行业将最先受到影响。",
+      "who_is_impacted": [
+        "平面设计师和创意从业者",
+        "Midjourney、Adobe Firefly 等竞争产品",
+        "ChatGPT 付费用户",
+        "品牌营销团队"
+      ],
+      "next_actions": [
+        "测试 Images 2.0 在中文内容生成上的表现",
+        "评估其对设计工作流的实际替代程度",
+        "关注 Adobe 等传统工具的应对策略"
+      ],
+      "risk_notes": [
+        "联网获取内容涉及版权争议",
+        "生成内容真实性核查难度加大"
+      ],
+      "references": [
+        "https://techcrunch.com/",
+        "https://news.ycombinator.com/",
+        "https://www.theverge.com/"
+      ]
     },
     {
       "hotspot_id": "H04",
-      "title": "GitHub Copilot 套餐调整与 Git 2.54 发布",
-      "what_changed": "GitHub 调整 Copilot Individual 套餐结构，确保服务稳定可靠。同期发布 Git 2.54，带来多项性能优化与新功能。",
-      "why_it_matters": "Copilot 是目前最广泛使用的 AI 编程助手，套餐调整直接影响数百万开发者的使用成本与权益。Git 2.54 的改进将惠及所有使用 Git 的开发团队。",
-      "who_is_impacted": ["GitHub Copilot Individual 用户", "使用 Git 的所有开发团队", "企业 DevOps 平台管理员"],
-      "next_actions": ["审查 Copilot Individual 新套餐条款，评估是否需要切换为 Business 套餐", "升级本地/CI Git 版本至 2.54 以获取性能提升", "关注 Copilot 价格变化对团队预算的影响"],
-      "risk_notes": ["套餐调整可能影响部分用户的使用习惯和预算规划"],
-      "references": ["https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/", "https://github.blog/"]
+      "title": "Anthropic Mythos AI 安全工具：271 个 Firefox 漏洞与安全争议",
+      "what_changed": "Mythos 协助 Mozilla 发现 271 个 Firefox 安全漏洞，同时工具本身遭到未授权访问，OpenAI 创始人公开批评。",
+      "why_it_matters": "AI 辅助安全研究能力已进入实战阶段；同时 AI 安全工具自身的安全性成为新的矛盾焦点。",
+      "who_is_impacted": [
+        "Firefox 用户（因漏洞修复受益）",
+        "安全研究人员",
+        "AI 安全工具市场",
+        "Anthropic 品牌声誉"
+      ],
+      "next_actions": [
+        "更新 Firefox 至已修复版本",
+        "关注 Mythos 访问权限事件后续调查",
+        "评估企业引入 AI 安全工具的审查标准"
+      ],
+      "risk_notes": [
+        "Mythos 数据泄露风险尚未完全明确",
+        "AI 安全工具被恶意使用的可能性上升"
+      ],
+      "references": [
+        "https://arstechnica.com/",
+        "https://techcrunch.com/",
+        "https://www.wired.com/"
+      ]
     },
     {
       "hotspot_id": "H05",
-      "title": "AI 代理框架全面爆发：Google ADK、LinkedIn 记忆代理、Gemini CLI",
-      "what_changed": "同一时间窗口内，Google 发布 ADK for Java 1.0（含新应用/插件架构与外部工具调用）；LinkedIn 开源认知记忆代理设计；Gemini CLI 支持子代理任务并行委派；开发者社区推出基于 k8s 的 AI Agent 运行时 Operator。",
-      "why_it_matters": "AI 代理从概念验证走向工程化生产的速度正在加快。记忆管理、任务并行与基础设施编排是三大核心工程挑战，本轮发布在三个维度同步给出了解答，预示着企业 AI 代理落地将进入加速期。",
-      "who_is_impacted": ["Java 后端开发者（Google ADK）", "构建 AI 工作流的工程团队", "Kubernetes 运维工程师", "企业 AI 架构师"],
-      "next_actions": ["试用 Google ADK for Java 1.0 构建企业级 Agent", "参考 LinkedIn 认知记忆设计，为长会话 Agent 增加持久记忆层", "评估 Gemini CLI 子代理是否可替代现有任务编排方案"],
-      "risk_notes": ["多框架并存增加了技术选型的复杂度", "Agent 记忆层涉及用户数据隐私，需做好隔离与审计"],
-      "references": ["https://www.infoq.com/", "https://dev.to/"]
+      "title": "Framework Laptop 13 Pro：模块化硬件的重要里程碑",
+      "what_changed": "Framework 发布 Laptop 13 Pro，核心升级包括 Intel Core Ultra 3、LPCAMM2 内存，并配套推出 eGPU 方案。",
+      "why_it_matters": "在苹果硅主导高端笔记本市场的背景下，Framework 为 Linux 开发者提供了真正可维修、可升级的高性能选项。",
+      "who_is_impacted": [
+        "Linux 开发者和 DIY 爱好者",
+        "苹果高端笔记本市场",
+        "可维修硬件倡导者",
+        "eGPU 外设生态"
+      ],
+      "next_actions": [
+        "关注 Linux 驱动支持成熟度",
+        "评估 eGPU 方案的实际性能表现",
+        "关注国内购买渠道和价格"
+      ],
+      "risk_notes": [
+        "LPCAMM2 内存生态兼容性尚待验证",
+        "产量和货期可能存在限制"
+      ],
+      "references": [
+        "https://arstechnica.com/",
+        "https://www.theverge.com/",
+        "https://www.wired.com/"
+      ]
     },
     {
       "hotspot_id": "H06",
-      "title": "AI 生成音乐泛滥：Deezer 称 44% 上传为 AI 生成且多为欺诈流量",
-      "what_changed": "Deezer 披露其平台每日上传歌曲中 44% 为 AI 生成，且大量伴随欺诈性流媒体行为（刷流量）。Ars Technica 独立报道了同一现象，确认其规模化程度。",
-      "why_it_matters": "AI 生成内容对音乐创作经济的冲击正在从定性讨论转向定量披露阶段。平台治理机制面临前所未有的压力，同时也预示着 AI 内容检测、版权归属与分成机制将迎来系统性重构。",
-      "who_is_impacted": ["音乐人与版权持有者", "流媒体平台（Spotify、Apple Music）", "音乐版权集体管理组织", "AI 音乐生成工具开发商"],
-      "next_actions": ["关注各大流媒体平台 AI 内容治理政策的后续进展", "评估 AI 生成音乐检测技术（如 AudioSeal）的可用性", "版权团队需为 AI 生成内容争议做好预案"],
-      "risk_notes": ["欺诈流量侵蚀版税分配，损害真实创作者利益", "监管介入可能对 AI 音乐生成工具施加更严格限制"],
-      "references": ["https://techcrunch.com/", "https://arstechnica.com/"]
+      "title": "Meta 员工监控：AI 训练数据伦理的边界争议",
+      "what_changed": "Meta 宣布记录员工键盘和鼠标行为，作为训练 AI Agent 的数据来源。",
+      "why_it_matters": "此举将企业内部行为数据的 AI 化利用推向台前，引发劳工权益、隐私保护和监管合规的多重讨论。",
+      "who_is_impacted": [
+        "Meta 员工",
+        "其他科技公司员工（可能效仿）",
+        "劳工权益组织和监管机构",
+        "AI 伦理研究者"
+      ],
+      "next_actions": [
+        "关注 Meta 员工工会或法律挑战进展",
+        "评估类似实践的合法性边界（GDPR 等）",
+        "观察其他大厂是否跟进"
+      ],
+      "risk_notes": [
+        "可能遭到欧盟 GDPR 调查",
+        "引发员工信任危机和人才流失"
+      ],
+      "references": [
+        "https://techcrunch.com/",
+        "https://news.ycombinator.com/"
+      ]
     },
     {
       "hotspot_id": "H07",
-      "title": "Vercel 遭黑客入侵：Roblox 作弊工具引发平台宕机与数据泄露",
-      "what_changed": "Vercel 确认遭到黑客入侵，客户数据被盗。事件起因之一是 Roblox 作弊工具结合 AI 工具对 Vercel 平台发起大规模攻击，导致服务中断。",
-      "why_it_matters": "此事件揭示了两个新兴风险：一是 AI 工具被武器化用于基础设施攻击；二是面向游戏玩家的作弊工具可成为攻击云平台的跳板。对所有托管在 Vercel 上的应用而言，这是一次真实的数据安全警示。",
-      "who_is_impacted": ["Vercel 平台用户与客户", "依赖 Vercel 部署前端应用的开发者", "云平台安全团队", "受影响的终端用户数据主体"],
-      "next_actions": ["Vercel 用户立即检查账户安全设置，轮换 API Token", "评估是否需要为关键应用增加额外认证层", "关注 Vercel 官方的事件报告与补偿方案", "更新威胁模型，纳入 AI 辅助攻击场景"],
-      "risk_notes": ["数据泄露可能触发 GDPR/CCPA 合规义务", "AI 辅助攻击的规模与速度超过传统防御响应能力"],
-      "references": ["https://techcrunch.com/", "https://news.ycombinator.com/"]
+      "title": "Amazon-Anthropic 深度绑定：50 亿美元投资与 Claude Code 商业化",
+      "what_changed": "Amazon 向 Anthropic 追加 50 亿美元投资，Anthropic 将用于购买 Amazon 芯片（Trainium）。Claude Code 订阅策略存在调整预期。",
+      "why_it_matters": "云厂商与 AI 实验室的战略绑定进一步加深，AWS 在 AI 基础设施竞争中获得重要筹码，开发者工具生态格局面临调整。",
+      "who_is_impacted": [
+        "Claude Code 开发者用户",
+        "AWS 和竞争云厂商",
+        "AI 芯片市场（Trainium vs. NVIDIA）",
+        "Anthropic 生态合作伙伴"
+      ],
+      "next_actions": [
+        "关注 Claude Code 新定价方案的官方公告",
+        "评估 AWS Trainium 与 NVIDIA GPU 的实际性能对比",
+        "跟踪 Anthropic 产品路线图"
+      ],
+      "risk_notes": [
+        "开发者对 Claude Code 涨价预期可能导致迁移",
+        "单一云厂商依赖风险"
+      ],
+      "references": [
+        "https://arstechnica.com/",
+        "https://news.ycombinator.com/",
+        "https://lobste.rs/"
+      ]
     },
     {
       "hotspot_id": "H08",
-      "title": "人形机器人创纪录半马：中国机器人超越人类",
-      "what_changed": "一款人形机器人在中国半程马拉松比赛中完赛并创下新纪录，在耐久性与速度上均超越了同场人类参赛者。",
-      "why_it_matters": "人形机器人在户外非结构化环境下的长距离运动能力突破，标志着具身智能进入新的里程碑阶段。这不仅是运动能力的展示，更是传感、平衡控制与能源管理技术的综合验证，将对工业、物流和服务机器人市场产生深远影响。",
-      "who_is_impacted": ["机器人与具身智能研发团队", "工业自动化与物流行业", "劳动力市场（高体力需求岗位）", "人形机器人投资者"],
-      "next_actions": ["关注中国具身智能创业公司的融资与技术路线", "评估人形机器人在仓储/工厂场景的商业可行性时间线", "追踪相关论文（运动控制、步态规划）以了解底层技术进展"],
-      "risk_notes": ["技术突破与商业落地之间仍有较大差距", "监管与劳工政策可能影响人形机器人的大规模部署"],
-      "references": ["https://www.wired.com/", "https://arstechnica.com/"]
+      "title": "TypeScript 7.0 Beta：前端/全栈开发工具链重大升级",
+      "what_changed": "TypeScript 7.0 Beta 正式发布，带来类型系统改进、性能优化等重大变化。",
+      "why_it_matters": "TypeScript 是全球使用最广泛的静态类型 JavaScript 超集，大版本变更直接影响数百万开发者和项目。",
+      "who_is_impacted": [
+        "前端和全栈开发者",
+        "TypeScript 框架（Next.js、NestJS 等）维护者",
+        "企业 IT 团队"
+      ],
+      "next_actions": [
+        "测试现有项目与 TS 7.0 的兼容性",
+        "关注 Breaking Changes 列表",
+        "规划升级时间线"
+      ],
+      "risk_notes": [
+        "大版本迁移成本较高",
+        "部分旧语法可能被废弃"
+      ],
+      "references": [
+        "https://lobste.rs/"
+      ]
     },
     {
       "hotspot_id": "H09",
-      "title": "Qwen3.6-Max-Preview：阿里发布新一代开源 LLM",
-      "what_changed": "阿里巴巴 Qwen 团队发布 Qwen3.6-Max-Preview，宣称在推理能力与上下文理解上均有提升，仍处于 Preview 阶段持续迭代。",
-      "why_it_matters": "Qwen 系列是目前开源 LLM 领域中最具竞争力的中文优先模型之一，其新版本的发布直接影响开发者在本地部署、RAG 应用和低成本推理场景中的模型选型。",
-      "who_is_impacted": ["使用开源 LLM 的开发者与研究者", "构建中文 NLP 应用的团队", "企业 AI 基础设施评估者"],
-      "next_actions": ["在 Hugging Face 上获取 Qwen3.6-Max-Preview 并进行基准测试", "对比 Qwen3.6 与 Llama 4 / DeepSeek-V3 在目标任务上的性能", "评估在本地 GPU 上部署的资源需求"],
-      "risk_notes": ["Preview 版本可能存在稳定性问题，生产部署需谨慎"],
-      "references": ["https://news.ycombinator.com/"]
+      "title": "Cloudflare：AI Agent 时代的身份验证新挑战",
+      "what_changed": "Cloudflare 发文探讨超越 bot/human 二元框架，为 AI Agent 时代的访问控制提供新思路。",
+      "why_it_matters": "随着 AI Agent 大规模上线，传统人机验证体系面临根本性挑战，网络安全基础设施需要重新设计。",
+      "who_is_impacted": [
+        "网站和 API 运营者",
+        "AI Agent 开发者",
+        "网络安全厂商"
+      ],
+      "next_actions": [
+        "关注 Cloudflare 的 Agent 身份验证产品落地",
+        "评估现有 CAPTCHA 方案的有效性"
+      ],
+      "risk_notes": [
+        "AI Agent 滥用风险在新框架下仍待解决"
+      ],
+      "references": [
+        "https://blog.cloudflare.com/"
+      ]
     },
     {
       "hotspot_id": "H10",
-      "title": "量子计算机对 128 位对称密钥无威胁",
-      "what_changed": "新研究表明当前量子计算机的实际能力不足以对 128 位对称密钥（如 AES-128）构成威胁，澄清了业界长期存在的过度担忧。",
-      "why_it_matters": "量子威胁被长期用作推动「后量子密码学」紧急迁移的论据，此研究有助于组织合理规划密码迁移优先级，避免因恐慌驱动导致的资源浪费，同时为 256 位密钥的充分性提供了理论支撑。",
-      "who_is_impacted": ["企业安全与密码学团队", "合规与风险管理部门", "后量子密码学产品供应商"],
-      "next_actions": ["重新评估后量子密码学迁移的紧迫性与优先级", "128 位对称密钥当前仍可视为安全，但非对称密钥（RSA/ECC）的威胁时间线需单独评估", "持续关注 NIST 后量子标准的最终发布"],
-      "risk_notes": ["研究结论针对对称密钥，非对称密码体系（RSA/ECC）面临的量子威胁时间线不同", "组织不应以此为由完全停止后量子迁移规划"],
-      "references": ["https://news.ycombinator.com/", "https://lobste.rs/"]
+      "title": "Anthropic Managed Agents：AI Agent 平台化提速",
+      "what_changed": "Anthropic 推出 Managed Agents 服务，企业可一键部署和管理 AI Agent，降低技术门槛。",
+      "why_it_matters": "AI Agent 从研究走向产品化的关键节点，将加速企业 AI 自动化落地，与 AWS Bedrock 深度整合。",
+      "who_is_impacted": [
+        "企业技术团队和 CTO",
+        "AI Agent 开发者",
+        "竞争平台（LangChain、AutoGen 等）"
+      ],
+      "next_actions": [
+        "试用 Managed Agents 评估企业适配度",
+        "关注定价和 SLA 细节",
+        "评估与现有 AI 架构的整合方案"
+      ],
+      "risk_notes": [
+        "厂商锁定风险较高",
+        "Agent 行为的可审计性需要重点关注"
+      ],
+      "references": [
+        "https://www.infoq.com/"
+      ]
     },
     {
       "hotspot_id": "H11",
-      "title": "NVIDIA 与 Adobe 汉诺威工业展：AI 驱动制造与创意智能",
-      "what_changed": "NVIDIA 与 Adobe 在汉诺威工业展（Hannover Messe）上联合展示了大规模 AI 代理驱动的制造流程优化与创意工作流突破，NVIDIA 发布了对 AI 驱动制造未来的整体愿景。",
-      "why_it_matters": "工业 AI 正从单点预测优化走向全链路代理化，NVIDIA 的 Omniverse 与 Adobe 的创意 AI 在制造场景的联合展示，预示着 B 端 AI 应用的下一个增长点将在工业数字孪生与智能制造领域。",
-      "who_is_impacted": ["制造业 CIO 与数字化转型团队", "工业自动化集成商", "使用 Adobe Creative Cloud 的内容团队"],
-      "next_actions": ["评估 NVIDIA Omniverse 与现有工业仿真工具的集成可行性", "关注 Hannover Messe 发布的具体 SDK 与合作伙伴文档", "探索 Adobe AI 代理 API 在内容生产流水线中的应用"],
-      "risk_notes": ["工业 AI 实施周期长、成本高，需谨慎评估 ROI"],
-      "references": ["https://blogs.nvidia.com/"]
+      "title": "pnpm 11 RC：Node.js 包管理生态的供应链安全升级",
+      "what_changed": "pnpm 11 RC 默认启用供应链安全配置，并采用 ESM 原生分发，新 Store 格式进一步优化磁盘效率。",
+      "why_it_matters": "供应链攻击已成为开源生态最主要的安全威胁，pnpm 的默认安全化是整个 Node.js 生态的重要信号。",
+      "who_is_impacted": [
+        "Node.js 开发者",
+        "前端工程化工具链维护者",
+        "使用 npm/yarn 的团队"
+      ],
+      "next_actions": [
+        "测试 pnpm 11 RC 与现有项目的兼容性",
+        "评估 ESM-only 包的依赖影响",
+        "规划升级路径"
+      ],
+      "risk_notes": [
+        "新 Store 格式与旧版本不兼容",
+        "部分 CJS 依赖可能需要迁移"
+      ],
+      "references": [
+        "https://www.infoq.com/"
+      ]
     },
     {
       "hotspot_id": "H12",
-      "title": "ChatGPT 广告生态浮现：基于提示词相关性的商业化",
-      "what_changed": "OpenAI 的广告合作方开始向广告主销售基于 ChatGPT 用户提示词相关性的广告位，标志着 ChatGPT 正式迈向商业广告变现模式。",
-      "why_it_matters": "ChatGPT 此前主要依靠订阅收入，广告模式的引入将为 OpenAI 开辟新的变现渠道，但也将引发用户对隐私（提示词被用于广告定向）和体验（对话流程被广告打断）的强烈担忧。这一模式若成功，可能被其他 AI 对话产品效仿。",
-      "who_is_impacted": ["ChatGPT 用户（隐私与体验影响）", "数字广告主与代理商", "OpenAI 竞争对手（Anthropic、Google Gemini）", "隐私监管机构"],
-      "next_actions": ["关注 OpenAI 广告政策的具体隐私条款", "评估企业 ChatGPT 使用是否受广告模式影响（ChatGPT Team/Enterprise 可能豁免）", "若用户隐私敏感，考虑迁移至不含广告的 AI 助手替代方案"],
-      "risk_notes": ["提示词数据用于广告定向涉及严重隐私合规风险", "广告模式可能损害 ChatGPT 在专业用户中的信任度"],
-      "references": ["https://news.ycombinator.com/"]
+      "title": "Git 2.54 + GitHub 架构危机：开发工具链可靠性关注",
+      "what_changed": "Git 2.54 带来多项改进；GitHub 公开承认宕机问题，承认扩展性和架构上存在系统性弱点。",
+      "why_it_matters": "GitHub 是全球最核心的代码托管平台，其架构问题直接影响数亿开发者的日常工作效率和 CI/CD 稳定性。",
+      "who_is_impacted": [
+        "所有使用 GitHub 的开发团队",
+        "依赖 GitHub Actions 的 CI/CD 管道",
+        "Git 用户（受益于 2.54 新特性）"
+      ],
+      "next_actions": [
+        "升级至 Git 2.54 以获取新特性",
+        "评估关键业务对 GitHub 的单点依赖",
+        "考虑备用代码托管方案"
+      ],
+      "risk_notes": [
+        "GitHub 未来宕机风险仍存在",
+        "大型单体仓库用户受影响更严重"
+      ],
+      "references": [
+        "https://lobste.rs/",
+        "https://www.infoq.com/"
+      ]
     }
   ]
 }
