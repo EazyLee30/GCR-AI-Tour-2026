@@ -2,8 +2,6 @@
 name: Tech Insight Workflow
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 1 * * *"
 strict: false
 permissions:
   contents: read
